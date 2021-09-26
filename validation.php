@@ -37,19 +37,6 @@ if (empty($_REQUEST["lname"]) || (strlen($_REQUEST["lname"])<5)) {
 }
 
 
-// if (empty($_REQUEST["email"])  ) {
-//    echo "<br> Email is required <br>";
-//  }
-//  elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-//   echo "<br> enter valid email address <br>";
-//  }
-//
-// else {
-//   echo "<br>";
-//   echo $_REQUEST ["email"];
-//   echo "<br>";
-// }
-
 $email = $_POST['email'];;
    // Validate email
    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
